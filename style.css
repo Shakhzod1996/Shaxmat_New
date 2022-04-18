@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(208, 208, 208);
+}
+
+.container {
+  margin: auto;
+  display: flex;
+}
+
+.container-3d {
+  transform: perspective(500px);
+}
+
+.place-container{
+  margin: auto;
+  border: 5px solid #000;
+  width: 650px;
+  flex-wrap: wrap;
+  display: flex;
+  transition: all .4s ease;
+}
+
+.place-container-3d {
+  transform: perspective(500px) rotateX(21deg) rotateY(0deg) rotateZ(0deg) scale(.8) translateX(0px) translateY(-50px) translateZ(50px);
+}
+
+.dark_color {
+  background-color: #111;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 31px 13px red inset !important;
+  
+}
+
+.elboard {
+  flex-direction: column;
+  display: flex;
+}
+
+.coordination {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  right: 0;
+  background-color: #fff;
+  width: 100px;
+  height: 85px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.tosh-fixed {
+  position: fixed;
+  left:0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  margin: 10px;
+}
+
+.tosh-fixed img {
+  width: 100px;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .4s ease;
+
+}
+
+.tosh-fixed img:hover {
+  background-color: rgb(156, 255, 255) !important;
+}
+
+.tosh-fixed-active {
+  background-color: rgb(156, 255, 255) !important;
+}
+
+
+
+.ston_selected {
+  box-shadow: 0px 0px 31px 13px rgb(156, 255, 255) inset !important;
+}
+
+.help {
+  box-shadow: 0px 0px 31px 13px rgb(62, 252, 252) inset !important;
+}
+
+.thwoD {
+  display: none;
+}
+
+.thwoD-show {
+  display: block;
+}
+
+.threeD-hide {
+  display: none;
+}
+
+.d3 {
+  position: fixed;
+  width: 100px;
+  height: 40px;
+  top: 20px;
+  right: 0;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.img-div {
+  width: 80px;
+  height: 80px;
+
+}
+
+.img-div img {
+  width: 100px;
+  height: 100px;
+}
+
+.clas {
+  box-shadow: 0px 0px 31px 13px rgb(194, 145, 145) inset !important;
+}
+
+.con {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+
+}
+
+
+
+
+
+
+
+
+
